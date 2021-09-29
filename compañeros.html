@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARCOMPA</title>
+    <link rel="icon" type="image.png" href="Logo.png" />
+    <link rel="stylesheet" href="variables.css" />
+    <script type="module" src="index.js"></script>
+</head>
+
+<body>
+    <ion-app>
+        <ion-menu side="start" content-id="menuContent">
+            <ion-header>
+                <ion-list>
+                    <ion-item color="primary">
+                        <ion-avatar id="fotoPerfil">
+                            <img src="Logo.png">
+                        </ion-avatar>
+
+                    </ion-item>
+                    <ion-item color="primary">
+                        <ion-label color="light">Nombre</ion-label>
+                    </ion-item>
+                    <ion-item color="primary">
+                        <ion-label color="light">Proyecto</ion-label>
+                    </ion-item>
+
+                </ion-list>
+
+            </ion-header>
+            <ion-content>
+                <ion-list lines="none">
+                    <ion-button fill="clear">
+                        <ion-router-link href="notificaciones.html">
+                            <ion-item>
+                                <ion-icon slot="start" name="notifications-outline"></ion-icon> Notificaciones
+                            </ion-item>
+                        </ion-router-link>
+                    </ion-button>
+                    <ion-button fill="clear">
+                        <ion-item>
+                            <ion-icon slot="start" name="gift-outline"></ion-icon> Solicitar Recompensa
+                        </ion-item>
+                    </ion-button>
+                    <ion-button fill="clear">
+                        <ion-router-link href="compañeros.html">
+                            <ion-item>
+                                <ion-icon slot="start" name="people-outline"></ion-icon> Compañeros De Equipo
+                            </ion-item>
+                        </ion-router-link>
+                    </ion-button>
+                    <ion-button fill="clear">
+                        <ion-item>
+                            <ion-icon slot="start" name="star-outline"></ion-icon> Mi Puntuacion
+                        </ion-item>
+                    </ion-button>
+
+                </ion-list>
+            </ion-content>
+            <ion-footer>
+                <ion-list>
+                    <ion-item lines="none" color="primary">
+                        <ion-button fill="clear">
+                            <ion-icon slot="start" name="log-out-outline"></ion-icon> Cerrar Sesion
+                        </ion-button>
+                    </ion-item>
+                </ion-list>
+            </ion-footer>
+
+        </ion-menu>
+        <ion-router-outlet id="menuContent"></ion-router-outlet>
+
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-grid ion-grid-padding="5px">
+                    <ion-row>
+                        <ion-col size="25px">
+                            <ion-buttons>
+                                <ion-menu-button color="light"></ion-menu-button>
+                            </ion-buttons>
+                        </ion-col>
+                        <ion-col>
+                            <ion-searchbar color="light">
+                            </ion-searchbar>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-toolbar>
+        </ion-header>
+
+
+        <ion-content color="ligth">
+            <ion-list lines="full">
+                <img src="Group 70.png" class="img-centro">
+                <ion-list-header>
+                    <ion-title>Equipo</ion-title>
+                </ion-list-header>
+                <ion-item>
+                    <img slot="start" src="justine-canlas-XkRaFf3amvk-unsplash 1.png">
+                    <ion-label>
+                        <h2>Ana Karenina</h2>
+                        <h3>(Gestión Humana)</h3>
+                    </ion-label>
+                </ion-item>
+                <ion-item>
+                    <img slot="start" src="justine-canlas-niI5RhFR82Q-unsplash 1.png">
+                    <ion-label>
+                        <h2>Adelaida Soto</h2>
+                        <h3>(Marketing)</h3>
+                    </ion-label>
+                </ion-item>
+                <ion-item>
+                    <img slot="start" src="jasmin-chew-sHdwA71jIOg-unsplash 2.png">
+                    <ion-label>
+                        <h2>Ana Maria Santana</h2>
+                        <h3>(Marketing)</h3>
+                    </ion-label>
+                </ion-item>
+                <ion-item>
+                    <img slot="start" src="Ellipse 7.png">
+                    <ion-label>
+                        <h2>Juan Camilo López</h2>
+                        <h3>(Gestión General de Procesos)</h3>
+                    </ion-label>
+                </ion-item>
+                <ion-item>
+                    <img slot="start" src="stepan-kulyk-hZwk4_3HviQ-unsplash 3.png">
+                    <ion-label>
+                        <h2>German Atehortua</h2>
+                        <h3>(Gestión General de Procesos)</h3>
+                    </ion-label>
+                </ion-item>
+                <ion-item>
+                    <img slot="start" src="avinash-ratnaji-BYgZAJsNU80-unsplash 1.png">
+                    <ion-label>
+                        <h2>Michael Llaves</h2>
+                        <h3>(Gestión Humana)</h3>
+                    </ion-label>
+                </ion-item>
+            </ion-list>
+
+            <ion-infinite-scroll threshold="100px" id="infinite-scroll" color="ligth">
+                <ion-infinite-scroll-content loading-spinner="bubbles" loading-text="Loading more data...">
+                </ion-infinite-scroll-content>
+            </ion-infinite-scroll>
+        </ion-content>
+
+        <ion-footer>
+            <ion-toolbar color="ligth">
+                <ion-tabs>
+
+                    <ion-tab tab="Publicar">
+                        <ion-nav></ion-nav>
+                    </ion-tab>
+
+                    <ion-router-link href="index.html">
+                        <ion-tab tab="Inicio">
+                            <ion-nav></ion-nav>
+                        </ion-tab>
+                    </ion-router-link>
+
+                    <ion-tab tab="Perfil">
+                        <ion-nav></ion-nav>
+                    </ion-tab>
+
+                    <ion-tab tab="Notificaciones">
+                        <ion-nav></ion-nav>
+                    </ion-tab>
+
+
+
+                    <ion-tab-bar slot="bottom" color="primary">
+
+                        <ion-tab-button tab="Inicio">
+                            <ion-icon name="home-outline" color="light"></ion-icon>
+                            <ion-label color="light">Inicio</ion-label>
+                        </ion-tab-button>
+
+                        <ion-tab-button tab="Publicar">
+                            <ion-icon name="add-circle-outline" color="light"></ion-icon>
+                            <ion-label color="light">Publicar</ion-label>
+                        </ion-tab-button>
+
+                        <ion-tab-button tab="Notificaciones">
+                            <ion-icon name="notifications-outline" color="light"></ion-icon>
+                            <ion-label color="light">Notificaciones</ion-label>
+                        </ion-tab-button>
+
+                        <ion-tab-button tab="Perfil">
+                            <ion-icon name="person-circle-outline" color="light"></ion-icon>
+                            <ion-label color="light">Perfil</ion-label>
+                        </ion-tab-button>
+
+                    </ion-tab-bar>
+
+                </ion-tabs>
+            </ion-toolbar>
+        </ion-footer>
+
+
+
+    </ion-app>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <script src="muscle.js"></script>
+
+
+</body>
+
+</html>
