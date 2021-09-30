@@ -23,10 +23,10 @@
 
                     </ion-item>
                     <ion-item color="primary">
-                        <ion-label color="light">Nombre</ion-label>
+                        <ion-label color="light">Nombre</h2>
                     </ion-item>
                     <ion-item color="primary">
-                        <ion-label color="light">Proyecto</ion-label>
+                        <ion-label color="light">Proyecto</h2>
                     </ion-item>
 
                 </ion-list>
@@ -95,59 +95,79 @@
         </ion-header>
 
 
-
         <ion-content color="ligth">
             <ion-list lines="full">
-                <ion-button expand="block" color="primary">
-                    <ion-icon slot="start" name="notifications-outline"></ion-icon> Marcar todo como leido
-                </ion-button>
-                <ion-item>
-                    <img slot="start" src="justine-canlas-XkRaFf3amvk-unsplash 1.png">
-                    <ion-label>
-                        <h2>Ana Karenina ha reaccionado a tu publicación</h2>
-                    </ion-label>
+                <ion-list-header>
+                    <p>Tu puntuacion actual: <ion-icon slot="end" name="star-outline"></ion-icon> 1350</p>
+                </ion-list-header>
+                <ion-item color="medium">
+                    <div>
+                        <h4>Incentivos Disponibles:</h4>
+                    </div>
                 </ion-item>
                 <ion-item>
-                    <img slot="start" src="users-icon-silky-line-user-iconset-custom-icon-design-185795 1.png">
-                    <ion-label>
-                        <h2>Te han incluido en el Proyecto Atlas, felicidades</h2>
-                    </ion-label>
+                    <h2>Día libre remunerado
+                        <div>
+                            <ion-icon slot="start" name="star-outline"></ion-icon> 1350
+                        </div>
+                    </h2>
+                    <ion-checkbox color="primary" checked="false" slot="start"></ion-checkbox>
                 </ion-item>
                 <ion-item>
-                    <img slot="start" src="jasmin-chew-sHdwA71jIOg-unsplash 2.png">
-                    <ion-label>
-                        <h2>Ana Maria Santana ha comentado tu publicación</h2>
-                    </ion-label>
+                    <h2>Descuento del 15% en skincare
+                        <div>
+                            <ion-icon slot="start" name="star-outline"></ion-icon> 1300
+                        </div>
+                    </h2>
+                    <ion-checkbox color="primary" checked="false" slot="start"></ion-checkbox>
                 </ion-item>
                 <ion-item>
-                    <img slot="start" src="Ellipse 7.png">
-                    <ion-label>
-                        <h2>Juan Camilo López ha reaccionado a tu publicación</h2>
-                    </ion-label>
+                    <h2>Bono de empleado $50.000
+                        <div>
+                            <ion-icon slot="start" name="star-outline"></ion-icon> 1500
+                        </div>
+                    </h2>
+                    <ion-checkbox color="primary" checked="false" slot="start"></ion-checkbox>
                 </ion-item>
                 <ion-item>
-                    <img slot="start" src="Group 71.png">
-                    <ion-label>
-                        <h2>Enhorabuena se ha aprobado tu solicitud, disfruta tu recompensa</h2>
-                    </ion-label>
+                    <h2>Bono de empleaso $70.000
+                        <div>
+                            <ion-icon slot="start" name="star-outline"></ion-icon> 2000
+                        </div>
+                    </h2>
+                    <ion-checkbox color="primary" checked="false" slot="start"></ion-checkbox>
                 </ion-item>
                 <ion-item>
-                    <img slot="start" src="avinash-ratnaji-BYgZAJsNU80-unsplash 1.png">
-                    <ion-label>
-                        <h2>Michael Llaves ha reaccionado a tu publicación</h2>
-                    </ion-label>
+                    <h2>Día extra remunerado de vacaciones
+                        <div>
+                            <ion-icon slot="start" name="star-outline"></ion-icon> 1560
+                        </div>
+                    </h2>
+                    <ion-checkbox color="primary" checked="false" slot="start"></ion-checkbox>
                 </ion-item>
                 <ion-item>
-                    <img slot="start" src="Ellipse 7.png">
-                    <ion-label>
-                        <h2>Juan Camilo López ha comentado tu publicación</h2>
-                    </ion-label>
+                    <h2>Aporte de 10% a pensión mes actual
+                        <div>
+                            <ion-icon slot="start" name="star-outline"></ion-icon> 2600
+                        </div>
+                    </h2>
+                    <ion-checkbox color="primary" checked="false" slot="start"></ion-checkbox>
                 </ion-item>
                 <ion-item>
-                    <img slot="start" src="jasmin-chew-sHdwA71jIOg-unsplash 2.png">
-                    <ion-label>
-                        <h2>Ana Maria Santana ha reaccionado a tu publicación</h2>
-                    </ion-label>
+                    <h2>Bono estudiantil $50.000
+                        <div>
+                            <ion-icon slot="start" name="star-outline"></ion-icon> 1563
+                        </div>
+                    </h2>
+                    <ion-checkbox color="primary" checked="false" slot="start"></ion-checkbox>
+                </ion-item>
+                <ion-item>
+                    <h2>Capacitación en finanzas
+                        <div>
+                            <ion-icon slot="start" name="star-outline"></ion-icon> 2800
+                        </div>
+                    </h2>
+                    <ion-checkbox color="primary" checked="false" slot="start"></ion-checkbox>
                 </ion-item>
             </ion-list>
 
@@ -165,11 +185,9 @@
                         <ion-nav></ion-nav>
                     </ion-tab>
 
-                    <ion-router-link href="index.html">
-                        <ion-tab tab="Inicio">
-                            <ion-nav></ion-nav>
-                        </ion-tab>
-                    </ion-router-link>
+                    <ion-tab tab="Inicio">
+                        <ion-nav></ion-nav>
+                    </ion-tab>
 
                     <ion-tab tab="Perfil">
                         <ion-nav></ion-nav>
@@ -185,22 +203,22 @@
 
                         <ion-tab-button tab="Inicio">
                             <ion-icon name="home-outline" color="light"></ion-icon>
-                            <ion-label color="light">Inicio</ion-label>
+                            <ion-label color="light">Inicio</h2>
                         </ion-tab-button>
 
                         <ion-tab-button tab="Publicar">
                             <ion-icon name="add-circle-outline" color="light"></ion-icon>
-                            <ion-label color="light">Publicar</ion-label>
+                            <ion-label color="light">Publicar</h2>
                         </ion-tab-button>
 
                         <ion-tab-button tab="Notificaciones">
                             <ion-icon name="notifications-outline" color="light"></ion-icon>
-                            <ion-label color="light">Notificaciones</ion-label>
+                            <ion-label color="light">Notificaciones</h2>
                         </ion-tab-button>
 
                         <ion-tab-button tab="Perfil">
                             <ion-icon name="person-circle-outline" color="light"></ion-icon>
-                            <ion-label color="light">Perfil</ion-label>
+                            <ion-label color="light">Perfil</h2>
                         </ion-tab-button>
 
                     </ion-tab-bar>

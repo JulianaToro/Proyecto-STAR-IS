@@ -18,7 +18,9 @@ h2 {
     margin: 10px auto 10px;
     display: block;
 }
-
+.star{
+    white-space: normal;
+}
 body.backdrop-no-scroll {
     overflow: hidden
 }
@@ -95,7 +97,7 @@ html.ios ion-modal .ion-page {
 }
 
 .ion-color-medium {
-    --ion-color-base: var(--ion-color-medium, #E5E5E5)!important;
+    --ion-color-base: var(--ion-color-medium, #586870)!important;
     --ion-color-base-rgb: var(--ion-color-medium-rgb, 146, 148, 156)!important;
     --ion-color-contrast: var(--ion-color-medium-contrast, #fff)!important;
     --ion-color-contrast-rgb: var(--ion-color-medium-contrast-rgb, 255, 255, 255)!important;
