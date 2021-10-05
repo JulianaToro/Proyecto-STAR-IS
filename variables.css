@@ -1,3 +1,88 @@
+.cuerpo {
+    margin: 0;
+    padding: 0;
+    background-color: #002C47;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.login-box {
+    width: 320px;
+    height: 420px;
+    background: #004670;
+    color: #fff;
+    top: 65%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.login-box .avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: -250px;
+    left: calc(75% - 200px);
+}
+
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 50px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 15px;
+    outline: none;
+    height: 40px;
+    color: #004670;
+    font-size: 16px;
+}
+
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #587888;
+    color: #EFEFF3;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #587888;
+    opacity: 70%;
+}
+
+.login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #EFEFF3;
+    display: flex;
+    justify-content: center;
+}
+
 html.ios {
     --ion-default-font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto", sans-serif
 }
@@ -274,7 +359,6 @@ form .btn button:hover {
     background-color: #FF3D3D;
     color: #fff;
 }
-
 
 .btn_reaccion .reaccion:nth-child(3):hover {
     background-color: #A63DFF;
