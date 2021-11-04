@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +8,6 @@
   <title>STAR</title>
   <link rel="icon" type="image.png" href="img/Logo.png" />
   <link rel="stylesheet" href="variables.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <script type="module" src="index.js"></script>
 </head>
 
@@ -59,10 +57,10 @@
           </ion-button>
           <ion-button fill="clear">
             <ion-router-link href="perfilP.html">
-              <ion-item>
-                <ion-icon slot="start" name="star-outline"></ion-icon> Mi Puntuacion
-              </ion-item>
-          </ion-router-link>
+            <ion-item>
+              <ion-icon slot="start" name="star-outline"></ion-icon> Mi Puntuacion
+            </ion-item>
+        </ion-router-link>
           </ion-button>
 
         </ion-list>
@@ -98,87 +96,68 @@
       </ion-toolbar>
     </ion-header>
 
-
     <ion-content color="ligth">
       <ion-list>
-        <img src="img/PerfilPuntuar.png" class="img-centro">
+        <div class="PerfilC">
+        <img src="img/stepan-kulyk-hZwk4_3HviQ-unsplash 3.png" class="avatar" alt="Avatar Image" >
         <div class="ion-text-center">
-            <h2>Luisa Gallego</h2>
-            <h3>(Gestión Humana)</h3>
+            <h2 >German Atehortua </h2>
+            <h3>(Trabajador Proyecto Atlas)</h3>
         </div>
         <div class="ion-text-center">
-            <h5>“Trata a los demas como te gustaria ser tratado”</h5>
+            <h5>“Si la vida te da limones debes hacer limonada”</h5>
         </div>
-        <div class="container">
-            <div class="star-widget">
-                <input type="radio" name="rate" id="rate-5">
-                <label for="rate-5" class="fas fa-star"></label>
-                <input type="radio" name="rate" id="rate-4">
-                <label for="rate-4" class="fas fa-star"></label>
-                <input type="radio" name="rate" id="rate-3">
-                <label for="rate-3" class="fas fa-star"></label>
-                <input type="radio" name="rate" id="rate-2">
-                <label for="rate-2" class="fas fa-star"></label>
-                <input type="radio" name="rate" id="rate-1">
-                <label for="rate-1" class="fas fa-star"></label>
-                <form action="#">
-                    <header></header>
-                    <div class="textarea">
-                      <textarea cols="30" placeholder="Dejar un comentario (opcional).."></textarea>
-                    </div>
-                    <div class="btn">
-                      <button type="submit">Puntuar</button>
-                    </div>
-                </form>
+        <div style="text-align: center;">
+            <ion-button color="light" href="#">Publicar</ion-button>
+            <ion-button color="light" href="PerfilP.html">Ver Puntuacion</ion-button>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+    <div class="PerfilP">
+        <ion-item class="border" color="light">
+            <div>
+                <h4>Mis Equipos:</h4>
             </div>
-        </div>
-        <div class="ion-text-left">
-            <h5>Publicaciones</h5>
-        </div>
-        <div>
-              <ion-card>
-                <ion-chip>
-                    <ion-avatar>
-                      <img src="img/PerfilMini.png">
-                    </ion-avatar>
-                    <ion-label>Luisa Gallego</ion-label>
-                  </ion-chip>
-                <img src="img/public.png" />
-                <ion-card-header>
-                  <ion-card-subtitle>Asistencia Psicologica</ion-card-subtitle>
-                  <ion-card-title>¿Necesitas ayuda? Contactanos</ion-card-title>
-                </ion-card-header>
-                <ion-card-content>
-                  Asistencia 24/7
-                </ion-card-content>
-              </ion-card>
-        </div>
-      </ion-list>
+        </ion-item>
+        <div class="margin">
+        <ion-item lines="none" class="border" color="new">
+            <img width=50px height=50px slot="start" src="img/Group 70.png">
+            <ion-label>
+                <h2 style="text-align:center">Equipo de Investigacion Atlas</h2>
+            </ion-label>
+        </ion-item>
 
+    </div>
+    </div>
+    <div style="text-align: center;">
+    <ion-button color="primary" href="#">Editar Perfil</ion-button>
+    <ion-button color="primary" href="restablecerContra.html">Cambiar Contraseña</ion-button>
+</div>
+      </ion-list>
+    
+</ion-content>
       <ion-infinite-scroll threshold="100px" id="infinite-scroll" color="ligth">
         <ion-infinite-scroll-content loading-spinner="bubbles" loading-text="Loading more data...">
         </ion-infinite-scroll-content>
       </ion-infinite-scroll>
-    </ion-content>
+    
 
     <ion-footer>
       <ion-toolbar color="ligth">
         <ion-tabs>
 
           <ion-tab tab="Publicar">
-            <ion-nav></ion-nav>
           </ion-tab>
 
           <ion-tab tab="Inicio">
-            <ion-nav></ion-nav>
           </ion-tab>
 
           <ion-tab tab="Perfil">
-            <ion-nav></ion-nav>
           </ion-tab>
 
-          <ion-tab tab="Notificaciones">
-            <ion-nav></ion-nav>
+          <ion-tab tab="Notificaciones" >
           </ion-tab>
 
 
@@ -195,7 +174,7 @@
               <ion-label color="light">Publicar</ion-label>
             </ion-tab-button>
 
-            <ion-tab-button tab="Notificaciones">
+            <ion-tab-button tab="Notificaciones" >
               <ion-icon name="notifications-outline" color="light"></ion-icon>
               <ion-label color="light">Notificaciones</ion-label>
             </ion-tab-button>
@@ -214,18 +193,6 @@
 
 
   </ion-app>
-  <script>
-    const btn = document.querySelector("button");
-    const widget = document.querySelector(".star-widget");
-    btn.onclick = ()=>{
-      widget.style.display = "none";
-      editBtn.onclick = ()=>{
-        widget.style.display = "block";
-        
-      }
-      return false;
-    }
-  </script>
 
   <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
   <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>

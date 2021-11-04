@@ -132,7 +132,40 @@ html.ios ion-modal .ion-page {
     justify-content: center;
     flex-direction: column;
 }
+.PerfilC {
+    position: relative;
+    width: 375px;
+    background: #def0f5;
+    padding: 20px 30px;
+    border: 1px solid #444;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-block-end: 50px;
+}
+.border {
+    border-radius: 10px;
+}
+.margin {
+    margin-top: 10px;
+}
+.PerfilP {
 
+    position: relative;
+    width: 375px;
+    background: #ffffff;
+    padding: 20px 30px;
+    border: 2.5px solid #C3C3D2;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
 .container .star-widget input {
     display: none;
 }
@@ -478,13 +511,21 @@ form .btn button:hover {
 }
 
 .ion-color-dark {
-    --ion-color-base: var(--ion-color-dark, #222428)!important;
-    --ion-color-base-rgb: var(--ion-color-dark-rgb, 34, 36, 40)!important;
+    --ion-color-base: var(--ion-color-dark, #587888)!important;
+    --ion-color-base-rgb: var(--ion-color-dark-rgb, 88,120,136)!important;
     --ion-color-contrast: var(--ion-color-dark-contrast, #fff)!important;
     --ion-color-contrast-rgb: var(--ion-color-dark-contrast-rgb, 255, 255, 255)!important;
-    --ion-color-shade: var(--ion-color-dark-shade, #1e2023)!important;
-    --ion-color-tint: var(--ion-color-dark-tint, #383a3e)!important
+    --ion-color-shade: var(--ion-color-dark-shade, #4d6a78)!important;
+    --ion-color-tint: var(--ion-color-dark-tint, #698694)!important
 }
+.ion-color-new {
+    --ion-color-base: var(--ion-color-new, #e0f4f4);
+    --ion-color-base-rgb: var(--ion-color-new-rgb: 224,244,244);
+    --ion-color-contrast: var(--ion-color-new-contrast: #000000);
+    --ion-color-contrast-rgb: var(--ion-color-new-contrast-rgb: 0,0,0);
+    --ion-color-shade: var(--ion-color-new-shade: #c5d7d7);
+    --ion-color-tint: var(--ion-color-new-tint: #e3f5f5);
+  }
 
 .ion-page {
     left: 0;

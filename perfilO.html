@@ -108,30 +108,11 @@
         </div>
         <div class="ion-text-center">
             <h5>“Trata a los demas como te gustaria ser tratado”</h5>
-        </div>
-        <div class="container">
-            <div class="star-widget">
-                <input type="radio" name="rate" id="rate-5">
-                <label for="rate-5" class="fas fa-star"></label>
-                <input type="radio" name="rate" id="rate-4">
-                <label for="rate-4" class="fas fa-star"></label>
-                <input type="radio" name="rate" id="rate-3">
-                <label for="rate-3" class="fas fa-star"></label>
-                <input type="radio" name="rate" id="rate-2">
-                <label for="rate-2" class="fas fa-star"></label>
-                <input type="radio" name="rate" id="rate-1">
-                <label for="rate-1" class="fas fa-star"></label>
-                <form action="#">
-                    <header></header>
-                    <div class="textarea">
-                      <textarea cols="30" placeholder="Dejar un comentario (opcional).."></textarea>
-                    </div>
-                    <div class="btn">
-                      <button type="submit">Puntuar</button>
-                    </div>
-                </form>
+            <div style="text-align: center;">
+                <ion-button color="primary" href="calificar.html">Puntuar</ion-button>
             </div>
         </div>
+        
         <div class="ion-text-left">
             <h5>Publicaciones</h5>
         </div>
@@ -214,18 +195,6 @@
 
 
   </ion-app>
-  <script>
-    const btn = document.querySelector("button");
-    const widget = document.querySelector(".star-widget");
-    btn.onclick = ()=>{
-      widget.style.display = "none";
-      editBtn.onclick = ()=>{
-        widget.style.display = "block";
-        
-      }
-      return false;
-    }
-  </script>
 
   <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
   <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
