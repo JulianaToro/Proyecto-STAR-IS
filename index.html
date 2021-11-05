@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Actualizacion Inutil Y FRUSTRANTE -->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,8 @@
   <link rel="icon" type="image.png" href="img/Logo.png" />
   <link rel="stylesheet" href="variables.css" />
   <script type="module" src="index.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
 </head>
 
 <body>
@@ -88,7 +90,7 @@
               </ion-buttons>
             </ion-col>
             <ion-col>
-              <ion-searchbar color="light">
+              <ion-searchbar type="text" onChange ="recoverInputValue($event)" color="light">
               </ion-searchbar>
             </ion-col>
           </ion-row>
@@ -292,8 +294,12 @@
   <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
   <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
   <script src="muscle.js"></script>
-
-
+  <script>
+    function recoverInputValue(event:CustomEvent) {
+      this.value=event.detail.value
+      console.log(this.value);
+    }
+  </script>
 </body>
 
 </html>
