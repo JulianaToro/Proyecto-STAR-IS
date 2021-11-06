@@ -165,6 +165,43 @@ html.ios ion-modal .ion-page {
     justify-content: center;
     flex-direction: column;
 
+
+}
+.publicacion {
+
+    position: relative;
+    width: 375px;
+    background: #ffffff;
+    padding: 3px 3.5px;
+    border: 2.5px solid #C3C3D2;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.publicacionT{
+    position: relative;
+    width: 375px;
+    height: 350px;
+    background: #def0f5;
+    padding: 20px 30px;
+    border: 1px solid #444;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.publicacionI{
+    position: relative;
+    width: 375px;
+    background: #C4C4C4;
+    border: 1px solid #444;
+    border-radius: 18px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
 }
 .container .star-widget input {
     display: none;
