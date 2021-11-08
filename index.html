@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Actualizacion Inutil Y FRUSTRANTE -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,7 +62,7 @@
               <ion-item>
                 <ion-icon slot="start" name="star-outline"></ion-icon> Mi Puntuacion
               </ion-item>
-          </ion-router-link>
+            </ion-router-link>
           </ion-button>
 
         </ion-list>
@@ -90,7 +90,7 @@
               </ion-buttons>
             </ion-col>
             <ion-col>
-              <ion-searchbar type="text" onChange ="recoverInputValue($event)" color="light">
+              <ion-searchbar type="text" onChange= console.log(event) color="light">
               </ion-searchbar>
             </ion-col>
           </ion-row>
@@ -202,7 +202,7 @@
             <ion-card-title>Trabajar Equipo Es Mejor</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            El trabajo en equipo ayuda a la eficiencia, dos cabezas piensan mejor que una 
+            El trabajo en equipo ayuda a la eficiencia, dos cabezas piensan mejor que una
           </ion-card-content>
         </ion-card>
         <section class="contenedor">
@@ -254,7 +254,7 @@
           <ion-tab tab="Perfil">
           </ion-tab>
 
-          <ion-tab tab="Notificaciones" >
+          <ion-tab tab="Notificaciones">
           </ion-tab>
 
 
@@ -271,7 +271,7 @@
               <ion-label color="light">Publicar</ion-label>
             </ion-tab-button>
 
-            <ion-tab-button tab="Notificaciones" >
+            <ion-tab-button tab="Notificaciones">
               <ion-icon name="notifications-outline" color="light"></ion-icon>
               <ion-label color="light">Notificaciones</ion-label>
             </ion-tab-button>
@@ -294,12 +294,6 @@
   <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
   <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
   <script src="muscle.js"></script>
-  <script>
-    function recoverInputValue(event:CustomEvent) {
-      this.value=event.detail.value
-      console.log(this.value);
-    }
-  </script>
 </body>
 
 </html>

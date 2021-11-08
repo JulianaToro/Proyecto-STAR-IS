@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +8,7 @@
   <title>STAR</title>
   <link rel="icon" type="image.png" href="img/Logo.png" />
   <link rel="stylesheet" href="variables.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <script type="module" src="index.js"></script>
 </head>
 
@@ -62,7 +61,7 @@
               <ion-item>
                 <ion-icon slot="start" name="star-outline"></ion-icon> Mi Puntuacion
               </ion-item>
-          </ion-router-link>
+            </ion-router-link>
           </ion-button>
 
         </ion-list>
@@ -103,55 +102,55 @@
       <ion-list>
         <img src="img/PerfilPuntuar.png" class="img-centro">
         <div class="ion-text-center">
-            <h2>Luisa Gallego</h2>
-            <h3>(Gestión Humana)</h3>
+          <h2>Luisa Gallego</h2>
+          <h3>(Gestión Humana)</h3>
         </div>
         <div class="ion-text-center">
-            <h5>“Trata a los demas como te gustaria ser tratado”</h5>
+          <h5>“Trata a los demas como te gustaria ser tratado”</h5>
         </div>
         <div class="container">
-            <div class="star-widget">
-                <input type="radio" name="rate" id="rate-5">
-                <label for="rate-5" class="fas fa-star"></label>
-                <input type="radio" name="rate" id="rate-4">
-                <label for="rate-4" class="fas fa-star"></label>
-                <input type="radio" name="rate" id="rate-3">
-                <label for="rate-3" class="fas fa-star"></label>
-                <input type="radio" name="rate" id="rate-2">
-                <label for="rate-2" class="fas fa-star"></label>
-                <input type="radio" name="rate" id="rate-1">
-                <label for="rate-1" class="fas fa-star"></label>
-                <form action="#">
-                    <header></header>
-                    <div class="textarea">
-                      <textarea cols="30" placeholder="Dejar un comentario (opcional).."></textarea>
-                    </div>
-                    <div class="btn">
-                      <button type="submit">Puntuar</button>
-                    </div>
-                </form>
-            </div>
+          <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+            <form action="#">
+              <header></header>
+              <div class="textarea">
+                <textarea cols="30" placeholder="Dejar un comentario (opcional).."></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Puntuar</button>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="ion-text-left">
-            <h5>Publicaciones</h5>
+          <h5>Publicaciones</h5>
         </div>
         <div>
-              <ion-card>
-                <ion-chip>
-                    <ion-avatar>
-                      <img src="img/PerfilMini.png">
-                    </ion-avatar>
-                    <ion-label>Luisa Gallego</ion-label>
-                  </ion-chip>
-                <img src="img/public.png" />
-                <ion-card-header>
-                  <ion-card-subtitle>Asistencia Psicologica</ion-card-subtitle>
-                  <ion-card-title>¿Necesitas ayuda? Contactanos</ion-card-title>
-                </ion-card-header>
-                <ion-card-content>
-                  Asistencia 24/7
-                </ion-card-content>
-              </ion-card>
+          <ion-card>
+            <ion-chip>
+              <ion-avatar>
+                <img src="img/PerfilMini.png">
+              </ion-avatar>
+              <ion-label>Luisa Gallego</ion-label>
+            </ion-chip>
+            <img src="img/public.png" />
+            <ion-card-header>
+              <ion-card-subtitle>Asistencia Psicologica</ion-card-subtitle>
+              <ion-card-title>¿Necesitas ayuda? Contactanos</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Asistencia 24/7
+            </ion-card-content>
+          </ion-card>
         </div>
       </ion-list>
 
@@ -217,11 +216,11 @@
   <script>
     const btn = document.querySelector("button");
     const widget = document.querySelector(".star-widget");
-    btn.onclick = ()=>{
+    btn.onclick = () => {
       widget.style.display = "none";
-      editBtn.onclick = ()=>{
+      editBtn.onclick = () => {
         widget.style.display = "block";
-        
+
       }
       return false;
     }

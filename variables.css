@@ -132,6 +132,7 @@ html.ios ion-modal .ion-page {
     justify-content: center;
     flex-direction: column;
 }
+
 .PerfilC {
     position: relative;
     width: 375px;
@@ -146,14 +147,16 @@ html.ios ion-modal .ion-page {
     margin-top: 80px;
     margin-block-end: 50px;
 }
+
 .border {
     border-radius: 10px;
 }
+
 .margin {
     margin-top: 10px;
 }
-.PerfilP {
 
+.PerfilP {
     position: relative;
     width: 375px;
     background: #ffffff;
@@ -164,11 +167,9 @@ html.ios ion-modal .ion-page {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-
 }
-.publicacion {
 
+.publicacion {
     position: relative;
     width: 375px;
     background: #ffffff;
@@ -180,7 +181,8 @@ html.ios ion-modal .ion-page {
     flex-direction: column;
     margin-top: 50px;
 }
-.publicacionT{
+
+.publicacionT {
     position: relative;
     width: 375px;
     height: 350px;
@@ -192,7 +194,7 @@ html.ios ion-modal .ion-page {
     justify-content: center;
 }
 
-.publicacionI{
+.publicacionI {
     position: relative;
     width: 375px;
     background: #C4C4C4;
@@ -203,6 +205,7 @@ html.ios ion-modal .ion-page {
     justify-content: center;
     flex-direction: column;
 }
+
 .container .star-widget input {
     display: none;
 }
@@ -549,20 +552,21 @@ form .btn button:hover {
 
 .ion-color-dark {
     --ion-color-base: var(--ion-color-dark, #587888)!important;
-    --ion-color-base-rgb: var(--ion-color-dark-rgb, 88,120,136)!important;
+    --ion-color-base-rgb: var(--ion-color-dark-rgb, 88, 120, 136)!important;
     --ion-color-contrast: var(--ion-color-dark-contrast, #fff)!important;
     --ion-color-contrast-rgb: var(--ion-color-dark-contrast-rgb, 255, 255, 255)!important;
     --ion-color-shade: var(--ion-color-dark-shade, #4d6a78)!important;
     --ion-color-tint: var(--ion-color-dark-tint, #698694)!important
 }
+
 .ion-color-new {
     --ion-color-base: var(--ion-color-new, #e0f4f4);
-    --ion-color-base-rgb: var(--ion-color-new-rgb: 224,244,244);
+    --ion-color-base-rgb: var(--ion-color-new-rgb: 224, 244, 244);
     --ion-color-contrast: var(--ion-color-new-contrast: #000000);
-    --ion-color-contrast-rgb: var(--ion-color-new-contrast-rgb: 0,0,0);
+    --ion-color-contrast-rgb: var(--ion-color-new-contrast-rgb: 0, 0, 0);
     --ion-color-shade: var(--ion-color-new-shade: #c5d7d7);
     --ion-color-tint: var(--ion-color-new-tint: #e3f5f5);
-  }
+}
 
 .ion-page {
     left: 0;
