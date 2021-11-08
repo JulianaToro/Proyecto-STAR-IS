@@ -15,6 +15,7 @@
 
 <body>
   <ion-app>
+    <!-- Menu Desplegable-->
     <ion-menu side="start" content-id="menuContent">
       <ion-header>
         <ion-list>
@@ -34,6 +35,7 @@
         </ion-list>
 
       </ion-header>
+      <!-- Botones Del menu-->
       <ion-content>
         <ion-list lines="none">
           <ion-button fill="clear">
@@ -79,7 +81,7 @@
 
     </ion-menu>
     <ion-router-outlet id="menuContent"></ion-router-outlet>
-
+<!-- Cabecera Con Searchbar -->
     <ion-header>
       <ion-toolbar color="primary">
         <ion-grid ion-grid-padding="5px">
@@ -98,7 +100,7 @@
       </ion-toolbar>
     </ion-header>
 
-
+<!-- Publicaciones De Los Usuarios -->
     <ion-content color="ligth">
       <ion-list>
         <ion-card>
@@ -117,6 +119,7 @@
             Asistencia 24/7
           </ion-card-content>
         </ion-card>
+        <!-- Sistema De Reaciones Para Las Publicaciones -->
         <section class="contenedor">
           <button type="" class="btn_reaccion">
             <span>Reaccionar</span>
@@ -141,6 +144,7 @@
           </button>
         </section>
         <form action="#">
+          <!-- Apartado De Comentarios Para Las Publicaciones -->
           <div class="textarea">
             <textarea cols="30" placeholder="Dejar un comentario (opcional).."></textarea>
           </div>
@@ -241,6 +245,7 @@
       </ion-infinite-scroll>
     </ion-content>
 
+    <!-- Pie De Pagina -->
     <ion-footer>
       <ion-toolbar color="ligth">
         <ion-tabs>

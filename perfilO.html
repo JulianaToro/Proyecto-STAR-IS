@@ -14,6 +14,7 @@
 
 <body>
   <ion-app>
+    <!-- Menu Desplegable-->
     <ion-menu side="start" content-id="menuContent">
       <ion-header>
         <ion-list>
@@ -33,6 +34,8 @@
         </ion-list>
 
       </ion-header>
+
+      <!-- Botones Del menu-->
       <ion-content>
         <ion-list lines="none">
           <ion-button fill="clear">
@@ -79,6 +82,7 @@
     </ion-menu>
     <ion-router-outlet id="menuContent"></ion-router-outlet>
 
+    <!-- Cabecera Con Searchbar -->
     <ion-header>
       <ion-toolbar color="primary">
         <ion-grid ion-grid-padding="5px">
@@ -97,7 +101,7 @@
       </ion-toolbar>
     </ion-header>
 
-
+<!-- Perfil De Otro Usuario -->
     <ion-content color="ligth">
       <ion-list>
         <img src="img/PerfilPuntuar.png" class="img-centro">
@@ -107,11 +111,13 @@
         </div>
         <div class="ion-text-center">
           <h5>“Trata a los demas como te gustaria ser tratado”</h5>
+          <!-- Boton Que Te Permite Puntuar A los Usuarios -->
           <div style="text-align: center;">
             <ion-button color="primary" href="calificar.html">Puntuar</ion-button>
           </div>
         </div>
 
+        <!-- Publicaciones Realizadas Por Otros Usuarios -->
         <div class="ion-text-left">
           <h5>Publicaciones</h5>
         </div>
@@ -141,6 +147,7 @@
       </ion-infinite-scroll>
     </ion-content>
 
+    <!-- Pie De Pagina -->
     <ion-footer>
       <ion-toolbar color="ligth">
         <ion-tabs>

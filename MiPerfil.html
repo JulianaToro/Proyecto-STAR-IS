@@ -13,6 +13,7 @@
 
 <body>
   <ion-app>
+    <!-- Menu Desplegable-->
     <ion-menu side="start" content-id="menuContent">
       <ion-header>
         <ion-list>
@@ -32,6 +33,7 @@
         </ion-list>
 
       </ion-header>
+      <!-- Botones Del menu-->
       <ion-content>
         <ion-list lines="none">
           <ion-button fill="clear">
@@ -78,6 +80,7 @@
     </ion-menu>
     <ion-router-outlet id="menuContent"></ion-router-outlet>
 
+    <!-- Cabecera Con Searchbar -->
     <ion-header>
       <ion-toolbar color="primary">
         <ion-grid ion-grid-padding="5px">
@@ -96,6 +99,7 @@
       </ion-toolbar>
     </ion-header>
 
+    <!-- Perfil Personal -->
     <ion-content color="ligth">
       <ion-list>
         <div class="PerfilC">
@@ -107,14 +111,16 @@
           <div class="ion-text-center">
             <h5>“Si la vida te da limones debes hacer limonada”</h5>
           </div>
+          <!-- Botones Para Consultar Puntuacion Y Realizar Publicaciones -->
           <div style="text-align: center;">
-            <ion-button color="light" href="#">Publicar</ion-button>
+            <ion-button color="light" href="publicacion.html">Publicar</ion-button>
             <ion-button color="light" href="PerfilP.html">Ver Puntuacion</ion-button>
           </div>
         </div>
         <div>
 
         </div>
+        <!-- Equipos A Los Que Pertenece El Perfil -->
         <div class="PerfilP">
           <ion-item class="border" color="light">
             <div>
@@ -131,6 +137,7 @@
 
           </div>
         </div>
+        <!-- Botones Que Permiten La Edicion Y El Cambio De Contraseña Del Perfil -->
         <div style="text-align: center;">
           <ion-button color="primary" href="#">Editar Perfil</ion-button>
           <ion-button color="primary" href="restablecerContra.html">Cambiar Contraseña</ion-button>
@@ -143,7 +150,7 @@
       </ion-infinite-scroll-content>
     </ion-infinite-scroll>
 
-
+<!-- Pie De Pagina -->
     <ion-footer>
       <ion-toolbar color="ligth">
         <ion-tabs>

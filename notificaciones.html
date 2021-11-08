@@ -13,6 +13,7 @@
 
 <body>
     <ion-app>
+        <!-- Menu Desplegable-->
         <ion-menu side="start" content-id="menuContent">
             <ion-header>
                 <ion-list>
@@ -32,6 +33,7 @@
                 </ion-list>
 
             </ion-header>
+            <!-- Botones Del menu-->
             <ion-content>
                 <ion-list lines="none">
                     <ion-button fill="clear">
@@ -78,6 +80,7 @@
         </ion-menu>
         <ion-router-outlet id="menuContent"></ion-router-outlet>
 
+        <!-- Cabecera Con Searchbar -->
         <ion-header>
             <ion-toolbar color="primary">
                 <ion-grid ion-grid-padding="5px">
@@ -100,9 +103,12 @@
 
         <ion-content color="ligth">
             <ion-list lines="full">
+
+                <!-- Boton Que Permite Marcar Todas Las Notificaciones Como Leidas -->
                 <ion-button expand="block" color="primary">
                     <ion-icon slot="start" name="notifications-outline"></ion-icon> Marcar todo como leido
                 </ion-button>
+                <!-- Notificaciones -->
                 <ion-item>
                     <img slot="start" src="img/justine-canlas-XkRaFf3amvk-unsplash 1.png">
                     <ion-label>
@@ -159,6 +165,7 @@
             </ion-infinite-scroll>
         </ion-content>
 
+        <!-- Pie De Pagina -->
         <ion-footer>
             <ion-toolbar color="ligth">
                 <ion-tabs>

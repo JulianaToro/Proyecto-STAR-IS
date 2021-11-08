@@ -13,12 +13,13 @@
 
 <body>
     <ion-app>
+        <!-- Menu Desplegable-->
         <ion-menu side="start" content-id="menuContent">
             <ion-header>
                 <ion-list>
                     <ion-item color="primary">
                         <ion-avatar id="fotoPerfil">
-                            <img src="Logo.png">
+                            <img src="img/Logo.png">
                         </ion-avatar>
 
                     </ion-item>
@@ -32,6 +33,7 @@
                 </ion-list>
 
             </ion-header>
+            <!-- Botones Del menu-->
             <ion-content>
                 <ion-list lines="none">
                     <ion-button fill="clear">
@@ -78,6 +80,7 @@
         </ion-menu>
         <ion-router-outlet id="menuContent"></ion-router-outlet>
 
+        <!-- Cabecera Con Searchbar -->
         <ion-header>
             <ion-toolbar color="primary">
                 <ion-grid ion-grid-padding="5px">
@@ -96,13 +99,14 @@
             </ion-toolbar>
         </ion-header>
 
-
+<!-- Logo Principal Del Equipo -->
         <ion-content color="ligth">
             <ion-list lines="full">
                 <img src="img/Group 70.png" class="img-centro">
                 <ion-list-header>
                     <ion-title>Equipo</ion-title>
                 </ion-list-header>
+                <!-- Integrantes Del Equipo -->
                 <ion-item>
                     <img slot="start" src="img/justine-canlas-XkRaFf3amvk-unsplash 1.png">
                     <ion-label>
@@ -153,6 +157,7 @@
             </ion-infinite-scroll>
         </ion-content>
 
+        <!-- Pie De Pagina -->
         <ion-footer>
             <ion-toolbar color="ligth">
                 <ion-tabs>
