@@ -1,15 +1,21 @@
 {
-  "name": "star",
-  "version": "1.0.0",
-  "description": "star proyect",
-  "main": "muscle.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.13",
+    "multer": "^1.4.3",
+    "nodemon": "^2.0.14",
+    "path": "^0.12.7",
+    "yarn": "^1.22.17"
   },
-  "keywords": [],
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "firebase": "^9.1.0"
-  }
+  "description": ""
 }
