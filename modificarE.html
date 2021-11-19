@@ -97,86 +97,42 @@
         </ion-header>
 
         <ion-content color="ligth">
-            <ion-list>
-                <div class="publicacion">
-                    <div>
-                        <ion-item lines="none">
-                            <ion-icon slot="end" name="earth-outline"></ion-icon>
-                            Crear una publicacion</ion-label>
+            <ion-list class="AdminC">
+
+                <ion-item color="tertiary">
+                    <h4>Modificar Equipo</h4>
+                </ion-item>
+                <div>
+                    <form>
+                        <ion-searchbar color="light" placeholder="BUSCAR POR NOMBRE">
+                        </ion-searchbar>
+                    </form>
+                    <ion-list>
+                        <ion-item>
+                            <ion-button color="primary" fill="clear" href="#">
+                                <ion-label>Anteproyecto X</ion-label>
+                            </ion-button>
                         </ion-item>
-                    </div>
+                        <ion-item>
+                            <ion-button color="primary" fill="clear" href="#">
+                                <ion-label>Geminis</ion-label>
+                            </ion-button>
+                        </ion-item>
+                        <ion-item>
+                            <ion-button color="primary" fill="clear" href="#">
+                                <ion-label>Global</ion-label>
+                            </ion-button>
+                        </ion-item>
+                        <ion-item>
+                            <ion-button color="primary" fill="clear" href="#">
+                                <ion-label>Zinc</ion-label>
+                            </ion-button>
+                        </ion-item>
+                    </ion-list>
                 </div>
-                <div class="publicacionT">
-                    <ion-textarea placeholder="Escribe lo que desees compartir..."></ion-textarea>
-                </div>
-                <div class="publicacionI">
-                    <ion-icon size="large" name="attach-outline"></ion-icon>
-                </div>
-                <div style="text-align: center;">
-                    <ion-button color="primary" fill="clear" href="#">
-                        <ion-icon name="add-outline"></ion-icon>Añadir hashtags
-                    </ion-button>
-                    <ion-button color="primary" href="#">Publicar</ion-button>
-
-                </div>
-
             </ion-list>
 
         </ion-content>
-        <ion-infinite-scroll threshold="100px" id="infinite-scroll" color="ligth">
-            <ion-infinite-scroll-content loading-spinner="bubbles" loading-text="Loading more data...">
-            </ion-infinite-scroll-content>
-        </ion-infinite-scroll>
-
-
-        <ion-footer>
-            <ion-toolbar color="ligth">
-                <ion-tabs>
-
-                    <ion-tab tab="Publicar">
-                    </ion-tab>
-
-                    <ion-tab tab="Inicio">
-                    </ion-tab>
-
-                    <ion-tab tab="Perfil">
-                    </ion-tab>
-
-                    <ion-tab tab="Notificaciones">
-                    </ion-tab>
-
-
-
-                    <ion-tab-bar slot="bottom" color="primary">
-
-                        <ion-tab-button tab="Inicio">
-                            <ion-icon name="home-outline" color="light"></ion-icon>
-                            <ion-label color="light">Inicio</ion-label>
-                        </ion-tab-button>
-
-                        <ion-tab-button tab="Publicar">
-                            <ion-icon name="add-circle-outline" color="light"></ion-icon>
-                            <ion-label color="light">Publicar</ion-label>
-                        </ion-tab-button>
-
-                        <ion-tab-button tab="Notificaciones">
-                            <ion-icon name="notifications-outline" color="light"></ion-icon>
-                            <ion-label color="light">Notificaciones</ion-label>
-                        </ion-tab-button>
-
-                        <ion-tab-button tab="Perfil">
-                            <ion-icon name="person-circle-outline" color="light"></ion-icon>
-                            <ion-label color="light">Perfil</ion-label>
-                        </ion-tab-button>
-
-                    </ion-tab-bar>
-
-                </ion-tabs>
-            </ion-toolbar>
-        </ion-footer>
-
-
-
     </ion-app>
 
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>

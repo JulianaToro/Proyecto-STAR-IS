@@ -97,86 +97,53 @@
         </ion-header>
 
         <ion-content color="ligth">
-            <ion-list>
-                <div class="publicacion">
-                    <div>
-                        <ion-item lines="none">
-                            <ion-icon slot="end" name="earth-outline"></ion-icon>
-                            Crear una publicacion</ion-label>
-                        </ion-item>
+            <ion-list class="AdminC">
+
+                <ion-item color="tertiary">
+                    <h4>Crear Cuenta</h4>
+                </ion-item>
+                <div>
+                    <form>
+                        <div class="format">
+                            <!-- USERNAME INPUT -->
+                            <label for="username"></label>
+                            <input type="text" placeholder="Usuario">
+                        </div>
+                        <div class="format01">
+                            <!-- PASSWORD INPUT -->
+                            <label for="password"></label>
+                            <input type="password" placeholder="Contraseña">
+                        </div>
+                        <div class="format">
+                            <!-- USERNAME INPUT -->
+                            <label for="username"></label>
+                            <input type="text" placeholder="Correo Electronico">
+                        </div>
+                    </form>
+                    <ion-item color="tertiary">
+                        <h6>SELECCIONE EL ÁREA AL QUE PERTENECE</h6>
+                    </ion-item>
+                    <ion-item fill="clear">
+                        <h6>Gestion Humana</h6>
+                        <ion-checkbox color="primary" checked="false" slot="start"></ion-checkbox>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label>Otra (Seleccionar)</ion-label>
+                        <ion-select value="Otra (Seleccionar)">
+                            <ion-select-option value="Finanzas">Finanzas</ion-select-option>
+                            <ion-select-option value="Marketing y CEO">Marketing y CEO</ion-select-option>
+                            <ion-select-option value="Desarrollo Corporativo">Desarrollo Corporativo</ion-select-option>
+                            <ion-select-option value="Gestion General De Procesos">Gestion General De Procesos</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                    <div style="text-align: right;">
+                        <ion-button color="primary" href="#">Confirmar</ion-button>
                     </div>
-                </div>
-                <div class="publicacionT">
-                    <ion-textarea placeholder="Escribe lo que desees compartir..."></ion-textarea>
-                </div>
-                <div class="publicacionI">
-                    <ion-icon size="large" name="attach-outline"></ion-icon>
-                </div>
-                <div style="text-align: center;">
-                    <ion-button color="primary" fill="clear" href="#">
-                        <ion-icon name="add-outline"></ion-icon>Añadir hashtags
-                    </ion-button>
-                    <ion-button color="primary" href="#">Publicar</ion-button>
 
                 </div>
-
             </ion-list>
 
         </ion-content>
-        <ion-infinite-scroll threshold="100px" id="infinite-scroll" color="ligth">
-            <ion-infinite-scroll-content loading-spinner="bubbles" loading-text="Loading more data...">
-            </ion-infinite-scroll-content>
-        </ion-infinite-scroll>
-
-
-        <ion-footer>
-            <ion-toolbar color="ligth">
-                <ion-tabs>
-
-                    <ion-tab tab="Publicar">
-                    </ion-tab>
-
-                    <ion-tab tab="Inicio">
-                    </ion-tab>
-
-                    <ion-tab tab="Perfil">
-                    </ion-tab>
-
-                    <ion-tab tab="Notificaciones">
-                    </ion-tab>
-
-
-
-                    <ion-tab-bar slot="bottom" color="primary">
-
-                        <ion-tab-button tab="Inicio">
-                            <ion-icon name="home-outline" color="light"></ion-icon>
-                            <ion-label color="light">Inicio</ion-label>
-                        </ion-tab-button>
-
-                        <ion-tab-button tab="Publicar">
-                            <ion-icon name="add-circle-outline" color="light"></ion-icon>
-                            <ion-label color="light">Publicar</ion-label>
-                        </ion-tab-button>
-
-                        <ion-tab-button tab="Notificaciones">
-                            <ion-icon name="notifications-outline" color="light"></ion-icon>
-                            <ion-label color="light">Notificaciones</ion-label>
-                        </ion-tab-button>
-
-                        <ion-tab-button tab="Perfil">
-                            <ion-icon name="person-circle-outline" color="light"></ion-icon>
-                            <ion-label color="light">Perfil</ion-label>
-                        </ion-tab-button>
-
-                    </ion-tab-bar>
-
-                </ion-tabs>
-            </ion-toolbar>
-        </ion-footer>
-
-
-
     </ion-app>
 
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>

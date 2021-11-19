@@ -20,6 +20,28 @@
     padding: 70px 30px;
 }
 
+.format {
+    left: 20%;
+    position: relative;
+    margin-top: 25px;
+    margin-block-end: 20px;
+}
+
+.format01 {
+    left: 20%;
+    position: relative;
+    margin-top: 25px;
+    margin-block-end: 60px;
+}
+
+.imgFon {
+    background-image: url(img/florian-marette-XQgDCP2YyzY-unsplash.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .login-box .avatar {
     width: 250px;
     height: 250px;
@@ -48,7 +70,8 @@
     margin-bottom: 20px;
 }
 
-.login-box input[type="text"], .login-box input[type="password"] {
+.login-box input[type="text"],
+.login-box input[type="password"] {
     border: none;
     border-bottom: 1px solid #fff;
     border-radius: 15px;
@@ -120,6 +143,22 @@ html.ios ion-modal .ion-page {
     border-radius: inherit
 }
 
+.Chip {
+    background-color: #28A1BB;
+}
+
+.Chip01 {
+    background-color: #586870;
+}
+
+.margenBot {
+    margin-block-end: 450.5px;
+}
+
+.margenBot01 {
+    margin-top: 20px;
+}
+
 .container {
     position: relative;
     width: 375px;
@@ -146,6 +185,18 @@ html.ios ion-modal .ion-page {
     flex-direction: column;
     margin-top: 80px;
     margin-block-end: 50px;
+}
+
+.AdminC {
+    position: relative;
+    width: 375px;
+    background: #cedbe5;
+    border: 1px solid #444;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
 }
 
 .border {
@@ -218,7 +269,8 @@ html.ios ion-modal .ion-page {
     transition: all 0.2s ease;
 }
 
-input:not(:checked)~label:hover, input:not(:checked)~label:hover~label {
+input:not(:checked)~label:hover,
+input:not(:checked)~label:hover~label {
     color: #fd4;
 }
 
@@ -413,7 +465,10 @@ form .btn button:hover {
     transform: translateY(15px);
 }
 
-.btn_reaccion .reaccion:nth-child(1):hover>span, .btn_reaccion .reaccion:nth-child(2):hover>span, .btn_reaccion .reaccion:nth-child(3):hover>span, .btn_reaccion .reaccion:nth-child(4):hover>span {
+.btn_reaccion .reaccion:nth-child(1):hover>span,
+.btn_reaccion .reaccion:nth-child(2):hover>span,
+.btn_reaccion .reaccion:nth-child(3):hover>span,
+.btn_reaccion .reaccion:nth-child(4):hover>span {
     opacity: 1;
     visibility: visible;
     -webkit-transform: translateY(0);
@@ -442,6 +497,7 @@ form .btn button:hover {
     background-color: #FF3D3D;
     color: #fff;
 }
+
 
 /* animacion salto */
 
@@ -586,7 +642,21 @@ form .btn button:hover {
     position: relative
 }
 
-.ion-page-hidden, [hidden], ion-action-sheet-controller, ion-alert-controller, ion-loading-controller, ion-menu-controller, ion-modal-controller, ion-nav-controller, ion-picker-controller, ion-popover-controller, ion-route, ion-route-redirect, ion-router, ion-select-option, ion-toast-controller {
+.ion-page-hidden,
+[hidden],
+ion-action-sheet-controller,
+ion-alert-controller,
+ion-loading-controller,
+ion-menu-controller,
+ion-modal-controller,
+ion-nav-controller,
+ion-picker-controller,
+ion-popover-controller,
+ion-route,
+ion-route-redirect,
+ion-router,
+ion-select-option,
+ion-toast-controller {
     display: none!important
 }
 
@@ -598,7 +668,8 @@ form .btn button:hover {
     display: block
 }
 
-html.plt-ios.plt-hybrid, html.plt-ios.plt-pwa {
+html.plt-ios.plt-hybrid,
+html.plt-ios.plt-pwa {
     --ion-statusbar-padding: 20px
 }
 
@@ -626,7 +697,8 @@ html.plt-ios.plt-hybrid, html.plt-ios.plt-pwa {
     }
 }
 
-ion-card-header.ion-color .ion-inherit-color, ion-card.ion-color .ion-inherit-color {
+ion-card-header.ion-color .ion-inherit-color,
+ion-card.ion-color .ion-inherit-color {
     color: inherit
 }
 
@@ -648,11 +720,15 @@ ion-card-header.ion-color .ion-inherit-color, ion-card.ion-color .ion-inherit-co
     box-shadow: 8px 0 42px rgba(0, 0, 0, .08)
 }
 
-.md .menu-content-push, .md .menu-content-reveal {
+.md .menu-content-push,
+.md .menu-content-reveal {
     box-shadow: 4px 0 16px rgba(0, 0, 0, .18)
 }
 
-audio, canvas, progress, video {
+audio,
+canvas,
+progress,
+video {
     vertical-align: baseline
 }
 
@@ -661,7 +737,8 @@ audio:not([controls]) {
     height: 0
 }
 
-b, strong {
+b,
+strong {
     font-weight: 700
 }
 
@@ -688,12 +765,18 @@ pre {
     overflow: auto
 }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
     font-family: monospace, monospace;
     font-size: 1em
 }
 
-input, label, select, textarea {
+input,
+label,
+select,
+textarea {
     font-family: inherit;
     line-height: normal
 }
@@ -709,22 +792,45 @@ textarea::placeholder {
     padding-left: 2px
 }
 
-form, input, optgroup, select {
+form,
+input,
+optgroup,
+select {
     margin: 0;
     font: inherit;
     color: inherit
 }
 
-html input[type=button], input[type=reset], input[type=submit] {
+html input[type=button],
+input[type=reset],
+input[type=submit] {
     cursor: pointer;
     -webkit-appearance: button
 }
 
-.ion-tappable, [tappable], [tappable] div, [tappable] ion-icon, [tappable] ion-label, [tappable] span, a, a div, a ion-icon, a ion-label, a span, button, button div, button ion-icon, button ion-label, button span, input, textarea {
+.ion-tappable,
+[tappable],
+[tappable] div,
+[tappable] ion-icon,
+[tappable] ion-label,
+[tappable] span,
+a,
+a div,
+a ion-icon,
+a ion-label,
+a span,
+button,
+button div,
+button ion-icon,
+button ion-label,
+button span,
+input,
+textarea {
     touch-action: manipulation
 }
 
-a ion-label, button ion-label {
+a ion-label,
+button ion-label {
     pointer-events: none
 }
 
@@ -744,25 +850,31 @@ button {
     cursor: pointer
 }
 
-a[disabled], button[disabled], html input[disabled] {
+a[disabled],
+button[disabled],
+html input[disabled] {
     cursor: default
 }
 
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
     padding: 0;
     border: 0
 }
 
-input[type=checkbox], input[type=radio] {
+input[type=checkbox],
+input[type=radio] {
     padding: 0;
     box-sizing: border-box
 }
 
-input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
     height: auto
 }
 
-input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
     -webkit-appearance: none
 }
 
@@ -771,7 +883,8 @@ table {
     border-spacing: 0
 }
 
-td, th {
+td,
+th {
     padding: 0
 }
 
@@ -824,7 +937,12 @@ a {
     color: var(--ion-color-primary, #004670)
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-top: 16px;
     margin-bottom: 10px;
     font-weight: 500;
@@ -861,7 +979,8 @@ small {
     font-size: 75%
 }
 
-sub, sup {
+sub,
+sup {
     position: relative;
     font-size: 75%;
     line-height: 0;
@@ -1061,7 +1180,8 @@ sub {
     float: left!important
 }
 
-:host-context([dir=rtl]) .ion-float-start, [dir=rtl] .ion-float-start {
+:host-context([dir=rtl]) .ion-float-start,
+[dir=rtl] .ion-float-start {
     float: right!important
 }
 
@@ -1069,7 +1189,8 @@ sub {
     float: right!important
 }
 
-:host-context([dir=rtl]) .ion-float-end, [dir=rtl] .ion-float-end {
+:host-context([dir=rtl]) .ion-float-end,
+[dir=rtl] .ion-float-end {
     float: left!important
 }
 
@@ -1197,7 +1318,9 @@ sub {
     align-items: baseline!important
 }
 
-.ion-hide, .ion-hide-down, .ion-hide-up {
+.ion-hide,
+.ion-hide-down,
+.ion-hide-up {
     display: none!important
 }
 
@@ -1211,13 +1334,15 @@ sub {
     .ion-float-sm-start {
         float: left!important
     }
-    :host-context([dir=rtl]) .ion-float-sm-start, [dir=rtl] .ion-float-sm-start {
+     :host-context([dir=rtl]) .ion-float-sm-start,
+    [dir=rtl] .ion-float-sm-start {
         float: right!important
     }
     .ion-float-sm-end {
         float: right!important
     }
-    :host-context([dir=rtl]) .ion-float-sm-end, [dir=rtl] .ion-float-sm-end {
+     :host-context([dir=rtl]) .ion-float-sm-end,
+    [dir=rtl] .ion-float-sm-end {
         float: left!important
     }
     .ion-text-sm-center {
@@ -1274,13 +1399,15 @@ sub {
     .ion-float-md-start {
         float: left!important
     }
-    :host-context([dir=rtl]) .ion-float-md-start, [dir=rtl] .ion-float-md-start {
+     :host-context([dir=rtl]) .ion-float-md-start,
+    [dir=rtl] .ion-float-md-start {
         float: right!important
     }
     .ion-float-md-end {
         float: right!important
     }
-    :host-context([dir=rtl]) .ion-float-md-end, [dir=rtl] .ion-float-md-end {
+     :host-context([dir=rtl]) .ion-float-md-end,
+    [dir=rtl] .ion-float-md-end {
         float: left!important
     }
     .ion-text-md-center {
@@ -1337,13 +1464,15 @@ sub {
     .ion-float-lg-start {
         float: left!important
     }
-    :host-context([dir=rtl]) .ion-float-lg-start, [dir=rtl] .ion-float-lg-start {
+     :host-context([dir=rtl]) .ion-float-lg-start,
+    [dir=rtl] .ion-float-lg-start {
         float: right!important
     }
     .ion-float-lg-end {
         float: right!important
     }
-    :host-context([dir=rtl]) .ion-float-lg-end, [dir=rtl] .ion-float-lg-end {
+     :host-context([dir=rtl]) .ion-float-lg-end,
+    [dir=rtl] .ion-float-lg-end {
         float: left!important
     }
     .ion-text-lg-center {
@@ -1400,13 +1529,15 @@ sub {
     .ion-float-xl-start {
         float: left!important
     }
-    :host-context([dir=rtl]) .ion-float-xl-start, [dir=rtl] .ion-float-xl-start {
+     :host-context([dir=rtl]) .ion-float-xl-start,
+    [dir=rtl] .ion-float-xl-start {
         float: right!important
     }
     .ion-float-xl-end {
         float: right!important
     }
-    :host-context([dir=rtl]) .ion-float-xl-end, [dir=rtl] .ion-float-xl-end {
+     :host-context([dir=rtl]) .ion-float-xl-end,
+    [dir=rtl] .ion-float-xl-end {
         float: left!important
     }
     .ion-text-xl-center {
