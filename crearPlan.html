@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAR</title>
+    <link rel="icon" type="image.png" href="img/Logo.png" />
+    <link rel="stylesheet" href="variables.css" />
+    <script type="module" src="index.js"></script>
+</head>
+
+<body>
+    <ion-app>
+        <ion-menu side="start" content-id="menuContent">
+            <ion-header>
+                <ion-list>
+                    <ion-item color="primary">
+                        <ion-avatar id="fotoPerfil">
+                            <img src="img/Logo.png">
+                        </ion-avatar>
+
+                    </ion-item>
+                    <ion-item color="primary">
+                        <ion-label color="light">Nombre</ion-label>
+                    </ion-item>
+                    <ion-item color="primary">
+                        <ion-label color="light">Proyecto</ion-label>
+                    </ion-item>
+
+                </ion-list>
+
+            </ion-header>
+            <ion-content>
+                <ion-list lines="none">
+                    <ion-button fill="clear">
+                        <ion-router-link href="notificaciones.html">
+                            <ion-item>
+                                <ion-icon slot="start" name="notifications-outline"></ion-icon> Notificaciones
+                            </ion-item>
+                        </ion-router-link>
+                    </ion-button>
+                    <ion-button fill="clear">
+                        <ion-router-link href="recompensas.html">
+                            <ion-item>
+                                <ion-icon slot="start" name="gift-outline"></ion-icon> Solicitar Recompensa
+                            </ion-item>
+                        </ion-router-link>
+                    </ion-button>
+                    <ion-button fill="clear">
+                        <ion-router-link href="compañeros.html">
+                            <ion-item>
+                                <ion-icon slot="start" name="people-outline"></ion-icon> Compañeros De Equipo
+                            </ion-item>
+                        </ion-router-link>
+                    </ion-button>
+                    <ion-button fill="clear">
+                        <ion-router-link href="perfilP.html">
+                            <ion-item>
+                                <ion-icon slot="start" name="star-outline"></ion-icon> Mi Puntuacion
+                            </ion-item>
+                        </ion-router-link>
+                    </ion-button>
+
+                </ion-list>
+            </ion-content>
+            <ion-footer>
+                <ion-list>
+                    <ion-item lines="none" color="primary">
+                        <ion-button fill="clear">
+                            <ion-icon slot="start" name="log-out-outline"></ion-icon> Cerrar Sesion
+                        </ion-button>
+                    </ion-item>
+                </ion-list>
+            </ion-footer>
+
+        </ion-menu>
+        <ion-router-outlet id="menuContent"></ion-router-outlet>
+
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-grid ion-grid-padding="5px">
+                    <ion-row>
+                        <ion-col size="25px">
+                            <ion-buttons>
+                                <ion-menu-button color="light"></ion-menu-button>
+                            </ion-buttons>
+                        </ion-col>
+                        <ion-col>
+                            <ion-searchbar color="light">
+                            </ion-searchbar>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content color="ligth">
+            <ion-list class="AdminC">
+
+                <ion-item color="tertiary">
+                    <h4>Crear Plan De Incentivos</h4>
+                </ion-item>
+                <div>
+                    <form>
+                        <div class="format">
+                            <!-- USERNAME INPUT -->
+                            <label for="username"></label>
+                            <input type="text" placeholder="Nombre">
+                        </div>
+                        <div class="format01">
+                            <!-- PASSWORD INPUT -->
+                            <label for="password"></label>
+                            <input type="password" placeholder="Descripcion">
+                        </div>
+                        <div class="format01">
+                            <!-- USERNAME INPUT -->
+                            <label for="username"></label>
+                            <input type="text" placeholder="Estrellas Necesarias">
+                        </div>
+                    </form>
+                    <ion-item color="tertiary">
+                        <h6>AGREGAR ELEMENTOS AL PLAN </h6>
+                    </ion-item>
+                    <ion-item fill="clear">
+                        <h6>Dia Libre Remunerado</h6>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label>Día laboral libre remunerado o la entrega del valor equivalente según corresponda</ion-label>
+                        <ion-select value="Día laboral libre remunerado o la entrega del valor equivalente según corresponda">
+                            <ion-select-option value="Aceptar">Aceptar</ion-select-option>
+                            <ion-select-option value="Rechazar">Rechazar</ion-select-option>
+                        </ion-select>
+                    </ion-item>
+                    <div class="format">
+                        <!-- USERNAME INPUT -->
+                        <label for="username"></label>
+                        <input type="text" placeholder="Nombre">
+                    </div>
+                    <div class="format">
+                        <!-- PASSWORD INPUT -->
+                        <label for="password"></label>
+                        <input type="password" placeholder="Descripcion">
+                    </div>
+                    <ion-button color="primary" fill="clear" href="#">
+                        <ion-icon name="add-outline"></ion-icon>
+                    </ion-button>
+                    <div style="text-align: right;">
+                        <ion-button color="primary" href="#">Confirmar</ion-button>
+                    </div>
+
+                </div>
+            </ion-list>
+
+        </ion-content>
+    </ion-app>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <script src="muscle.js"></script>
+
+
+</body>
+
+</html>
